@@ -1,0 +1,14 @@
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --auto
+xset r rate 230 40
+xset -b
+tint2 &
+nm-applet &
+setxkbmap -model pc105 -layout us,ru -option "grp:caps_toggle" &
+volumeicon -c 1 &
+xxkb &
+obsetlayout 0 2 2 0 &
+synclient touchpadoff=1
+xinput disable "ELAN1010:00 04F3:3012 Touchpad"
+#xcompmgr && sleep 1 && pkill xcompmgr
+#openbox-session
